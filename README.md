@@ -1,181 +1,314 @@
-# Customer_Behavior-Analysis
-📌 Overview
+# Customer Behavior Analysis
 
-This project analyzes customer shopping behavior using Python, SQL, and Power BI to uncover insights about purchasing patterns, discounts, and customer subscriptions.
+## 📌 Overview
 
-The goal of this project is to demonstrate a complete data analytics workflow — from data loading and exploration to dashboard visualization and reporting.
+Customer Behavior Analysis is an end-to-end data analytics project that analyzes customer shopping behavior using **Python, SQL, and Power BI** to uncover insights into purchasing patterns, discount usage, subscription behavior, and customer spending.
 
-The project includes data cleaning, exploratory data analysis (EDA), SQL-based analysis, and interactive dashboard creation to understand customer purchasing trends and business insights.
+The project demonstrates a complete data analytics workflow, starting from **data loading and preprocessing** to **exploratory data analysis, SQL-based business analysis, interactive dashboard creation, and business insight generation**.
 
-📊 Dataset
+The main objective of this project is to transform raw customer shopping data into meaningful insights that can support **pricing strategies, promotional campaigns, customer segmentation, and business decision-making**.
+
+---
+
+## 📊 Dataset
 
 The dataset contains customer shopping information such as:
 
-Customer ID
+* Customer ID
+* Item Purchased
+* Purchase Amount
+* Discount Applied
+* Subscription Status
+* Payment Method
+* Location
+* Category
+* Purchase Frequency
+* Review Rating
+* Previous Purchases
 
-Item Purchased
+The dataset is used to analyze customer spending patterns, discount behavior, subscription trends, product performance, and customer purchasing behavior.
 
-Purchase Amount
+---
 
-Discount Applied
+## 🛠️ Tools & Technologies
 
-Subscription Status
+* **Python** – Data loading, preprocessing, and analysis
+* **Pandas** – Data manipulation and cleaning
+* **NumPy** – Numerical analysis
+* **Matplotlib** – Data visualization
+* **Seaborn** – Statistical visualization
+* **SQL** – Business-oriented data analysis
+* **MySQL / PostgreSQL** – Database management and querying
+* **Power BI** – Interactive dashboard development
+* **Jupyter Notebook** – Python analysis environment
+* **Gamma AI** – Presentation creation
 
-Payment Method
+---
 
-Location
+## 🔎 Project Workflow
 
-Category
+### 1️⃣ Data Loading
 
-This data helps analyze customer spending patterns, discount usage, and subscription behavior.
+The customer shopping dataset was loaded into Python using **Pandas** in a Jupyter Notebook environment.
 
-🛠 Tools & Technologies
+The initial analysis was performed to understand the structure, columns, data types, and overall quality of the dataset.
 
-Python – Data loading, preprocessing, and EDA
+---
 
-Pandas & NumPy – Data manipulation
+### 2️⃣ Data Cleaning & Preprocessing
 
-Matplotlib / Seaborn – Data visualization
+The dataset was prepared for analysis through various preprocessing steps:
 
-SQL (PostgreSQL / MySQL / SQL Server) – Querying and analysis
+* Identified and handled missing values
+* Checked for duplicate records
+* Standardized column names
+* Verified and corrected data types
+* Handled inconsistent categorical values
+* Converted relevant columns into appropriate formats
+* Prepared calculated fields required for analysis
 
-Power BI – Interactive dashboard creation
+The cleaned dataset was then used for **EDA, SQL analysis, and Power BI visualization**.
 
-Gamma AI – Presentation creation
+---
 
-Jupyter Notebook – Analysis environment
+### 3️⃣ Exploratory Data Analysis (EDA)
 
-🔎 Project Workflow
-1️⃣ Data Loading
+Exploratory Data Analysis was performed using **Pandas, NumPy, Matplotlib, and Seaborn**.
 
-The dataset was loaded into Python using Pandas in Jupyter Notebook.
+The analysis focused on:
 
-2️⃣ Data Cleaning
+* Customer purchasing trends
+* Average purchase amount
+* Discount usage patterns
+* Subscription behavior
+* Customer spending patterns
+* Product and category performance
+* Purchase frequency
+* Review ratings
+* Customer segmentation
 
-Removed missing values
+Various visualizations were created to identify patterns, relationships, and potential business opportunities within the dataset.
 
-Checked for duplicates
+---
 
-Standardized column names
+## 4️⃣ SQL Analysis
 
-Verified data types
+The cleaned dataset was loaded into a relational database for further analysis.
 
-3️⃣ Exploratory Data Analysis (EDA)
+SQL queries were used to answer business-oriented questions such as:
 
-EDA was performed to understand:
+* Which customers used discounts but still spent above the average purchase amount?
+* How does spending differ between subscribed and non-subscribed customers?
+* Which products or categories have the highest discount usage?
+* Which customer segments contribute the most revenue?
+* Which product categories generate the highest revenue?
+* How does customer purchasing behavior vary across different locations?
 
-Customer purchasing trends
+SQL analysis helped transform raw customer data into actionable business insights.
 
-Average purchase amount
+---
 
-Discount usage patterns
+## 5️⃣ Power BI Dashboard
 
-Spending behavior of subscribed vs non-subscribed customers
+An interactive **Power BI dashboard** was developed to provide a visual overview of customer shopping behavior.
 
-4️⃣ SQL Analysis
+### Key Dashboard Components
 
-The cleaned dataset was loaded into a SQL database.
-Several SQL queries were executed to answer business questions such as:
+* Total Revenue
+* Average Purchase Amount
+* Customer Distribution
+* Average Review Rating
+* Subscription Analysis
+* Discount Usage
+* Category Performance
+* Location-based Customer Analysis
+* Purchase Trends
 
-Customers who used discounts but still spent above average
+Interactive **slicers and filters** allow users to explore customer and purchasing behavior across different dimensions.
 
-Average spending of subscribed vs unsubscribed customers
+---
 
-Discount usage across different products
+## 📈 Dashboard Insights
 
-Revenue contribution by customer segments
+The Power BI dashboard provides an interactive way to analyze:
 
-5️⃣ Power BI Dashboard
+### Revenue Analysis
 
-An interactive dashboard was created to visualize:
+Identifies the contribution of different product categories and customer segments to overall revenue.
 
-Total revenue
+### Discount Analysis
 
-Average purchase value
+Analyzes discount usage and its relationship with customer purchasing behavior.
 
-Customer distribution
+### Subscription Analysis
 
-Discount usage trends
+Compares purchasing behavior between subscribed and non-subscribed customers.
 
-Product category performance
+### Customer Analysis
 
-📈 Dashboard
+Provides insights into customer distribution, purchase frequency, spending patterns, and engagement.
 
-The Power BI dashboard provides visual insights into customer behavior.
+---
 
-Key visualizations include:
+## 📊 Key Insights & Results
 
-Revenue by product category
+The analysis produced several important findings:
 
-Discount usage analysis
+* Customers using discounts can still contribute significantly to overall revenue and may have purchase values above the average.
+* Subscribed customers show different spending patterns compared with non-subscribed customers.
+* Certain product categories have relatively higher discount usage.
+* A smaller group of customers contributes a significant portion of overall revenue.
+* Customer purchasing behavior varies across product categories and locations.
+* Purchase frequency and previous purchasing activity can help identify valuable customer segments.
 
-Subscription vs non-subscription spending
+These insights can help businesses improve:
 
-Customer purchase distribution
+* Pricing strategies
+* Promotional campaigns
+* Customer retention
+* Subscription programs
+* Customer segmentation
+* Targeted marketing
 
-The dashboard allows quick exploration of business insights through interactive visuals.
+---
 
-📊 Key Insights / Results
+## ▶️ How to Run the Project
 
-Some important findings from the analysis:
+### 1. Clone the Repository
 
-Customers using discounts sometimes still spend above the average purchase amount.
+```bash
+git clone https://github.com/your-username/customer-behavior-analysis.git
+```
 
-Subscribed customers tend to have higher average spending compared to non-subscribed customers.
+### 2. Navigate to the Project Directory
 
-Certain product categories show higher discount usage rates.
+```bash
+cd customer-behavior-analysis
+```
 
-A small group of customers contributes to a significant portion of total revenue.
+### 3. Install Required Libraries
 
-These insights can help businesses optimize pricing strategies, promotions, and customer targeting.
-
-▶️ How to Run the Project
-
-1️⃣ Clone the repository
-
-git clone https://github.com/your-username/customer-shopping-analysis.git
-
-2️⃣ Install required libraries
-
+```bash
 pip install pandas numpy matplotlib seaborn sqlalchemy psycopg2
+```
 
-3️⃣ Open the Jupyter Notebook
+### 4. Launch Jupyter Notebook
 
+```bash
 jupyter notebook
+```
 
-4️⃣ Run the notebook to perform:
+Open the project notebook and execute the cells sequentially.
 
-Data loading
+### 5. Perform the Analysis
 
-Data cleaning
+The notebook contains steps for:
 
-EDA
+* Data loading
+* Data cleaning
+* Exploratory Data Analysis
+* Data visualization
+* SQL analysis
+* Business insight generation
 
-SQL analysis
+### 6. Open the Power BI Dashboard
 
-5️⃣ Open the Power BI file (.pbix) to explore the dashboard.
+Open the `.pbix` file using **Microsoft Power BI Desktop** to explore the interactive dashboard.
 
-📄 Project Deliverables
+---
 
-Jupyter Notebook (Data Analysis)
+## 📁 Project Structure
 
-SQL Queries
+```text
+Customer-Behavior-Analysis/
+│
+├── Dataset/
+│   └── customer_shopping_data.csv
+│
+├── Notebook/
+│   └── Customer_Behavior_Analysis.ipynb
+│
+├── SQL/
+│   └── customer_behavior_queries.sql
+│
+├── PowerBI/
+│   └── Customer_Behavior_Analysis.pbix
+│
+├── Report/
+│   └── Customer_Behavior_Analysis.pdf
+│
+├── Presentation/
+│   └── Customer_Behavior_Analysis.pptx
+│
+└── README.md
+```
 
+---
+
+## 📄 Project Deliverables
+
+* Jupyter Notebook – Data Analysis
+* SQL Queries – Business Analysis
+* Power BI Dashboard – Interactive Visualization
+* Project Report – Detailed Documentation
+* Presentation – Project Overview and Findings
+* Dataset – Customer Shopping Data
+
+---
+
+## 🎯 Project Objectives
+
+The major objectives of this project are to demonstrate practical skills in:
+
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis
+* Python Programming
+* Pandas & NumPy
+* SQL Querying
+* Database Analysis
+* Data Visualization
+* Power BI Dashboard Development
+* Business Intelligence
+* Business Insight Generation
+* Data Storytelling
+
+---
+
+## 🚀 Skills Demonstrated
+
+**Python | Pandas | NumPy | Matplotlib | Seaborn | SQL | MySQL | PostgreSQL | Power BI | Data Cleaning | EDA | Data Visualization | Business Analytics**
+
+---
+
+## 🔄 End-to-End Analytics Workflow
+
+```text
+Raw Customer Data
+        ↓
+Data Loading
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+Exploratory Data Analysis
+        ↓
+SQL Analysis
+        ↓
 Power BI Dashboard
+        ↓
+Business Insights
+        ↓
+Data-Driven Decision Making
+```
 
-Project Report (PDF)
+---
 
-Presentation (Gamma AI PPT)
+## 👨‍💻 Project Summary
 
-🎯 Purpose of the Project
+This project demonstrates how raw customer shopping data can be transformed into meaningful business intelligence through an end-to-end data analytics workflow.
 
-This project demonstrates end-to-end data analytics skills, including:
+**Raw Data → Data Cleaning → EDA → SQL Analysis → Power BI Dashboard → Business Insights**
 
-Data preprocessing
-
-Exploratory analysis
-
-SQL querying
+The project showcases the practical application of **Python, SQL, data visualization, and Power BI** to analyze customer behavior and generate actionable business insights.
 
 Business insight generation
 
